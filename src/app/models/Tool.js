@@ -18,7 +18,8 @@ module.exports = (sequelize, DataTypes) => {
     Tool.belongsToMany(models.Tag, {
       foreignKey: 'tool_id',
       through: 'tools_tags',
-      as: 'tags-tools',
+      as: 'ToolTag',
+      otherKey: 'tag_id'
     })
   }
 

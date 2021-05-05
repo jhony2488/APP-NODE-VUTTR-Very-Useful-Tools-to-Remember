@@ -17,11 +17,6 @@ module.exports = (sequelize, DataTypes) => {
   User.associate = function (models) {
     User.hasMany(models.Tool, { foreignKey: 'user_id', as: 'tools' })
 
-    User.belongsToMany(models.Tag, {
-      foreignKey: 'user_id',
-      through: 'users_tags',
-      as: 'users-tags',
-    })
   }
   return User
 }

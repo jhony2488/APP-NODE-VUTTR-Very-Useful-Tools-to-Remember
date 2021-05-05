@@ -1,7 +1,4 @@
-export {}
-
-const jwtlogin = require('jsonwebtoken')
-
+import jwtlogin from 'jsonwebtoken'
 import { UsersServices } from '../services/UsersServices'
 
 if (process.env.NODE_ENV === 'development') {
@@ -59,7 +56,7 @@ class UsersControllers implements CRUDUser {
       )
       return res.header('auth-token', token).json({
         error: null,
-        data: { token },
+        data: { token, id: user.id, uuid: user.uuid },
       })
     } catch (err) {
       return res.status(400).json({ message: err.message })
@@ -72,7 +69,7 @@ class UsersControllers implements CRUDUser {
 
     try {
       let user
-      if (codeSecret) {
+      if (codeSecret != null && codeSecret != undefined && codeSecret != NaN) {
         user = await userService.create(name, email, password, codeSecret)
       } else {
         user = await userService.create(name, email, password)

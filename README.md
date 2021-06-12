@@ -37,7 +37,7 @@
 <!--te-->
 
 <h2  id="status-projeto">  
-	🚧  VUTTR Back End 🚀 Em construção...  🚧
+	🚧  VUTTR Back End 🚀 Concluido
 </h2>
 
 <h2  id="features">  
@@ -45,8 +45,6 @@
 </h2>
 
 - [x] Desenvolver e realizar os testes
-- [] containerizar a aplicação
-- [] Aplicar CI/CD na aplicação e realizar o build em ambiente de produção
 - [x] Cadastro de usuário
 - [x] Pegar dados de um unico usuario
 - [x] Alterar dados de usuário
@@ -73,7 +71,7 @@
 <h3>Pré-requisitos</h3>
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Docker](https://www.docker.com/) e/ou [MySQL](https://www.mysql.com/).
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [MySQL](https://www.mysql.com/).
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 <h3 id="instalacao">Instalação</h3>
@@ -200,8 +198,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <div align="center">
 
-<a href="https://www.jhonyaraujo.com.br/">
- <img style="border-radius: 50%;" src="https://raw.githubusercontent.com/jhony2488/my-Website-Complete/master/assets/perfil.jpg" width="200px;" alt="Jhonata Vinicius"/>
+<a href="https://jhonyaraujo.netlify.app/">
+ <img style="border-radius: 50%;" src="https://raw.githubusercontent.com/jhony2488/images/master/perfil.jpg" width="200px;" alt="Jhonata Vinicius"/>
  <br />
  <h2>Jhonata Vinicius Da Silva Araujo(Jhony Araujo) </h2></a>
 

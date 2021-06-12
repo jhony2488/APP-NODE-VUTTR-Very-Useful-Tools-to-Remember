@@ -166,8 +166,6 @@ $ npm run documentation || yarn documentation
 # O servidor inciará na porta:3000 - acesse a documentação <http://localhost:3000/documentation/>
 ```
 
-Caso a aplicação já esteja sendo executada com docker basta acessar sem precisar executar o comando acima - <http://localhost:3000/documentation/>
-
 ### Acesse a documentação da localmente
 
 - [http://localhost:3000/documentation/](http://localhost:3000/documentation/)

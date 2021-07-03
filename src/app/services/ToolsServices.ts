@@ -1,9 +1,9 @@
-import { ToolsUnitFunctions } from '../unit/ToolsUnitFunctions'
+import { Tools } from '../utils/Tools'
 const { User, Tag, Tool, ToolTag } = require('../models')
 const slugify = require('slugify')
 const { Op } = require('sequelize')
 
-const toolsUnitFunctions = new ToolsUnitFunctions()
+const toolsUtilFunctions = new Tools()
 
 class ToolsServices {
   async index(id_users, page: any = 1, tag = null) {
@@ -91,7 +91,7 @@ class ToolsServices {
           },
         ],
       })
-      const getTools = await toolsUnitFunctions.reconfigToolsInGetWithTags(
+      const getTools = await toolsUtilFunctions.reconfigToolsInGetWithTags(
         tools
       )
       return {

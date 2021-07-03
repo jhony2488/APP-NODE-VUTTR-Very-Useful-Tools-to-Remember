@@ -1,4 +1,4 @@
-class ToolsUnitFunctions {
+class Tools {
   async reconfigToolsInGetWithTags(tools) {
     const getTools = await tools.rows.map((tool) => {
       return tool.TagTool.map((item) => {
@@ -25,4 +25,4 @@ class ToolsUnitFunctions {
   }
 }
 
-export { ToolsUnitFunctions }
+export { Tools }
